@@ -1,0 +1,4 @@
+// nominatim@0.1.0 downloaded from https://ga.jspm.io/npm:nominatim@0.1.0/lib/nominatim.js
+
+import r from"querystring";import o from"request";import t from"tqueue";var a={};var i=r,n=o,e=t;var m={addressdetails:1,limit:3,format:"json"};var s=new e({delay:1e3});var u="http://nominatim.openstreetmap.org/";var f=u+"search?";var p=u+"reverse?";function Nominatim(){}s.on("pop",(function(r){n(r.url+i.stringify(r.options),(function(o,t){var a=JSON.parse(t.body);r.callback(o,r.options,a)}))}));Nominatim.defaults=function(r){if(!r)return m;m=extend(r)};Nominatim.search=function(r,o){var t=extend(r);s.push({url:f,options:r,callback:o})};Nominatim.reverse=function(r,o){var t=extend(r);s.push({url:p,options:t,callback:o})};var extend=function(r){for(var o in m)r[o]||(r[o]=m[o]);return r};a=Nominatim;var c=a;export default c;
+

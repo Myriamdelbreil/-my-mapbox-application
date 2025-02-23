@@ -1,0 +1,13 @@
+<%= simple_form_for(@place) do |f|%>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :kind %>
+  <%= f.text_field :kind %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :place_tags %>
+  <%= f.text_field :place_tags, value: @place.place_tags.map(&:name).join(", ")  %>
+  <%= f.submit %>
+<%end%>

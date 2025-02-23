@@ -1,4 +1,6 @@
 import { Application } from "@hotwired/stimulus"
+import "leaflet"
+import "leaflet.markercluster"
 
 const application = Application.start()
 

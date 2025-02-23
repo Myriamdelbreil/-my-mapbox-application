@@ -1,0 +1,7 @@
+
+{
+  "scripts": {
+    "build": "esbuild app/javascript/* --outdir=app/assets/builds",
+    "start": "esbuild app/javascript/* --outdir=app/assets/builds --watch"
+  }
+}

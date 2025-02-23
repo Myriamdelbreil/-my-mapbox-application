@@ -8,9 +8,18 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+    <%= stylesheet_link_tag 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css',
+                        'https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css',
+                        'https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css' %>
+
   </head>
 
   <body>
+    <%= render "shared/navbar" %>
+    <%= render "shared/flashes" %>
     <%= yield %>
   </body>
 </html>

@@ -49,6 +49,10 @@ gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
 gem "sassc-rails"
+gem "devise"
+gem "geocoder"
+gem 'pry', '~> 0.15.0'
+
 
 group :development, :test do
   gem "dotenv-rails"
@@ -72,3 +76,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "leaflet-rails", "~> 1.9"
+gem 'mapbox-gl-rails'
