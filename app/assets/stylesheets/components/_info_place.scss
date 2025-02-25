@@ -1,0 +1,28 @@
+.leaflet-popup-close-button {
+  margin: 1rem;
+}
+
+.leaflet-popup-content-wrapper{
+  padding: 1rem;
+}
+
+.info-place {
+  background-color: #F8F8F8;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.tags {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.tag {
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem;
+  font-family: $body-font;
+  font-size: 1rem;
+}

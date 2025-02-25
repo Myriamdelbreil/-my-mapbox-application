@@ -21,6 +21,8 @@ export default class extends Controller {
       const lat = parseFloat(marker.lat);
       const lng = parseFloat(marker.lng);
       const leafletMarker = L.marker([lat, lng]);
+      const popup = marker.info_window_html;
+      leafletMarker.bindPopup(popup);
       markersCluster.addLayer(leafletMarker);
     })
     map.addLayer(markersCluster);

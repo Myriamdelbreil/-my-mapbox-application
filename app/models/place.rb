@@ -7,6 +7,7 @@ class Place < ApplicationRecord
 
   belongs_to :user
   has_many :place_tags
+  has_many :tags, through: :place_tags
   has_many :favorites
 
   accepts_nested_attributes_for :place_tags

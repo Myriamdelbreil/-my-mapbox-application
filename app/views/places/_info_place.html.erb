@@ -1,0 +1,16 @@
+<div class="info_place container">
+  <div class= "info_place_header container">
+    <h2><%= place.kind.capitalize %></h2>
+    <h1><strong><%= place.name %></strong></h1>
+  </div>
+  <div class="place_details container">
+    <h3><%= place.address %></h3>
+    <p><%= place.description %></p>
+  </div>
+
+  <div class="tags container flex-wrap">
+    <% place.tags.each do |tag| %>
+      <div class="d-inline tag" style="background-color: <%= tag.color %>"><%= tag.name %></div>
+    <% end %>
+  </div>
+</div>
